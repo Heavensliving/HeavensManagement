@@ -18,7 +18,7 @@ const app = express();
 const server = http.createServer(app);
 const io = new SocketIOServer(server, {
   cors: {
-    origin: '*',
+    origin: 'https://heavens-client.onrender.com',
     methods: ['GET', 'POST'],
   },
 });
